@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/Makhuta/discord-command-handler/issues"
   },
-  "homepage": "https://github.com/Makhuta/discord-command-handler#readme"
+  "homepage": "https://github.com/Makhuta/discord-command-handler#readme",
+  "dependencies": {
+    "discord.js": "^14.6.0",
+    "path": "^0.12.7"
+  }
 }

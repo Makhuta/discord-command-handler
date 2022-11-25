@@ -18,6 +18,7 @@
   "homepage": "https://github.com/Makhuta/discord-command-handler#readme",
   "dependencies": {
     "discord.js": "^14.6.0",
+    "fs": "^0.0.1-security",
     "path": "^0.12.7"
   }
 }

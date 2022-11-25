@@ -1,0 +1,35 @@
+module.exports = {
+  Name: "Template",
+  DescriptionShort: "template description short",
+  DescriptionLong: "template description long",
+  Usage: "/template",
+  Category: "Moderation",
+  IsPremium: false,
+  IsVoteDependent: false,
+  IsOwnerDependent: false,
+  IsAdminDependent: false,
+  SupportServerOnly: false,
+  PMEnable: false,
+  Released: false,
+  RequiedUserPermissions: ["MANAGE_GUILD"],
+  RequiedBotPermissions: ["ADMINISTRATOR"],
+  async create({ commands, permissions, dmEnabled }) {
+    let options = [
+      {
+        name: "optionName",
+        description: "optionDescription",
+        required: true
+        //type: CommandTypes.Boolean
+      }
+    ];
+    let command = await commands?.create({
+      name: this.Name.toLowerCase(),
+      description: this.DescriptionShort,
+      dmPermission: dmEnabled,
+      defaultMemberPermissions: permissions,
+      options
+    });
+    return command;
+  },
+  async run(interaction) {}
+};

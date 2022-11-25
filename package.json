@@ -1,0 +1,19 @@
+{
+  "name": "discord-command-handler",
+  "version": "0.0.1",
+  "description": "This will dynamically handle discord commands",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Makhuta/discord-command-handler.git"
+  },
+  "author": "Makhuta",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Makhuta/discord-command-handler/issues"
+  },
+  "homepage": "https://github.com/Makhuta/discord-command-handler#readme"
+}

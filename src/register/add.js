@@ -1,3 +1,4 @@
+const {join} = require("path")
 module.exports = async function ({ cmds, NRCMD }) {
   if (NRCMD.HasCreate) {
     await require(NRCMD.Path)?.create({
